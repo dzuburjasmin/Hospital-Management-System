@@ -1,0 +1,722 @@
+
+a:visited{
+    color: black;
+}
+.container {
+    margin-top: 180px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(rgba(167, 166, 166, 0.5), rgba(168, 168, 168, 0.5)), url('back.jpg');
+    margin-bottom: 0.5rem;
+
+}
+.forma input, .registerforma input{
+    width:100%;
+    height: 25px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    
+}
+input:focus, input{
+    border: none;
+    box-shadow: none;
+    outline-offset: 0;
+    outline: none;
+    padding-left: 0.5rem;
+}
+
+#naslov{
+    background-color: rgb(202, 248, 244, 0.7);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 70px;
+    border-bottom: rgb(20, 20, 20) solid 1px;
+    justify-content: flex-end;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+}
+#naslov img{
+    height: 75px;
+    width: 75px;
+}
+#formegrid {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 150px;
+    margin-right: 50px;
+    margin-left:50px;
+    margin-top: 100px;
+    row-gap: 0px;
+   
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   float: right;
+   margin-top: 65px;
+}
+#naslov h1{
+    font-size: 31px;
+    color: rgb(17, 16, 16);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+   max-height: 100%;
+}
+#logo {
+width:40px;
+height: 40px;
+margin-right: 20px;
+float: left;
+cursor: pointer;
+background-color: rgb(202, 248, 244, 0);
+margin-left: -16px;
+
+
+}
+#naslov a{
+    padding:10px 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   cursor: pointer;
+   text-decoration: none;
+   
+   
+}
+#naslov > :nth-child(2) {
+    margin-right: auto;
+   
+  }
+  #naslov a:hover{
+      background-color:red;
+      color: white; 
+  }
+.avatarimage {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin-bottom: 10px;
+}
+.forma:hover{
+    box-shadow: red 0px 10px 0px 0px;
+}
+.forma{
+    padding:15px;
+    padding-bottom: 15px;
+    
+}
+.forma input{
+    border-radius: 2rem;
+}
+form button {
+    float: right;
+    font-size: 16px;
+    margin-right: -8px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 9px;
+
+
+}
+form button:hover{
+    background-color: #333;
+    color: white;
+}
+button{
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.register{
+    margin-top: 10px;
+}
+.register button{
+    border: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-decoration: underline;
+    
+}
+
+.registerforma{
+   padding-bottom: 15px;
+   margin-top: -50px;
+   padding:15px;
+   visibility: hidden;
+   animation-name: fade ;
+    animation-duration: 1.5s;
+}
+.registerforma h2{
+    float: left;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+.registercontainer{
+    margin-top: 90px;
+}
+.registercontainer input{
+    height: 17px;
+    margin-top: -7px;
+    margin-bottom: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.registercontainer label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+.registercontainer button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+    margin-left: 145px;
+}
+@keyframes fade{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+a.active{
+      background-color: rgb(134, 132, 132);
+      color: white;
+  }
+
+  #naslov2{
+    background-color:rgb(202, 248, 244, 0.7);
+    height: 30px;
+    display: flex;
+    float: right;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 200px;
+    border-bottom: rgb(17, 16, 16) solid 1px;
+    position:fixed;
+    justify-content: flex-end;
+    top:51px;
+    width: 100%;
+    
+    z-index: 1;
+    
+}
+#naslov2 a{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: auto;
+    padding-right: 17px;
+    padding-left: 17px;
+    
+    text-decoration: none;
+   
+    
+}
+#naslov2 a:hover{
+    background-color: red;
+    color: white;
+    
+}
+.appDiv h1{  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    font-size: 2rem;
+} 
+a .active{
+    color: white;
+    background-color: #333;
+}
+#appList{
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    text-align: left;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    
+}
+
+.appDiv i{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0;
+
+}
+
+.appDiv{
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+
+}
+.appointment{
+    float:left;
+    width: 92%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 10px;
+    height: 55px;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    padding-right: 10px;
+    background-color: rgb(228, 255, 253, 0.3 );
+    cursor: pointer;
+    margin-top: 12px;
+    opacity: 0.8;
+
+   
+    
+}
+.appointment span{
+    float: left;
+    width: calc(100% / 5);
+    margin-top: 7px;
+    font-size: 11px;
+    
+    
+    
+}
+.appointment span p{
+    margin-top: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+   font-style: oblique;
+   
+}
+#lijeviSpan{
+    float: left;
+    margin-left: -30px;
+    
+}
+.appointment:hover{
+    box-shadow: rgb(226, 225, 225) 2px 2px 5px 2px ;
+    opacity: 1;
+    background: rgb(228, 255, 253, 0.7 );
+}
+#requestNew{
+    margin-left: 0px;
+    margin-top: 96px;
+    
+   
+}
+#requestNew button{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:white ;
+    width: 130px;
+    text-align: center;
+    border: white 1px solid;
+    background-color:rgb(228, 255, 253, 0.3 ) ;
+    
+    
+}
+#requestNew button img{
+    width:50px;
+    height: 50px;
+    
+    
+}
+#requestNew button:hover{
+    box-shadow: rgb(226, 225, 225)  3px 3px 7px 3px;
+    opacity: 1;
+    background-color:rgb(228, 255, 253, 0.6 )
+    
+   
+}
+#renewal{
+    margin-top: 70px;
+}
+#logo a:hover{
+    background-color: initial ;
+}
+#hmsNaslov a:hover{
+    background-color: initial;
+    text-decoration: red underline;
+}
+#hmsNaslov a{
+    text-decoration: black underline;
+}
+.scroll{
+    width: 100%;
+}
+#appointmentsListScroll{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    max-height: 465px;
+}
+#prescriptionsListScroll{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    max-height: 465px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0fdfd;
+    opacity: 0.3;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(228, 255, 253);
+  }
+  #covidContainer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    
+}
+#covidInfo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80%;
+    margin:auto;
+}
+#covidInfo span{
+    margin: auto;
+    background: rgb(228, 255, 253, 0.5);
+    width: 8rem;
+    height: 50vh;
+    text-align: center ;
+    border-radius: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 2rem;
+}
+#covidInfo span h3{
+    font-weight: lighter;
+   
+}
+#updatedCont{
+    display: flex;
+    justify-content: flex-end;
+    width: 83%;
+    margin-right: 15rem;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    
+    
+}
+i{
+    font-size: 6.5rem;
+    margin-bottom: 5rem;
+}
+#deaths, #critical, #confirmed{
+    font-size: 2rem;
+}
+#logoContainer img{
+    width: 30vw;
+    height: 40vh;
+}
+#logoContainer{
+    background: rgb(228, 255, 253, 0.5 );
+    width: 30vw;
+    height: 28vw;
+    margin-top: 20vh;
+    border-radius: 50%;
+    border: 2px solid black;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutusContainer{
+    display: grid;
+    grid-template-columns: 33% 67%;
+    width: 100%;
+}
+#textContainer{
+    font-size: 0.9rem;
+    width: 90%;
+    margin-left: 0.5rem;
+    margin-top: 15vh;
+    margin-right: 2rem;
+    padding: 5.8rem 1.3rem 1.3rem 1.3rem;
+    background: rgb(228, 255, 253, 0.3); 
+    border-radius: 5rem;
+    height: 53vh;
+    
+}
+#textContainer:hover{
+    background: rgb(228, 255, 253, 0.4);
+}
+.staffContainerOdd, .staffContainerEven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background: rgb(228, 255, 253, 0.3);
+    margin-left: 1rem;
+    border-radius: 3rem ;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    height: 15rem;
+    
+}
+.staffContainerOdd:hover, .staffContainerEven:hover{
+    background: rgb(228, 255, 253, 0.6);
+    
+}
+.staffContainerOdd p{
+    margin-left: 7rem;
+    font-style: italic;
+    text-align: right;
+    font-size: 1rem;
+    
+}
+.staffContainerEven p{
+    margin-right: 7rem;
+    font-style: italic; 
+    text-align: left;
+    font-size: 1rem;
+}
+#ourstaff{
+    margin-top: 15.5vh;
+}
+#ourstaff h1{
+    margin-left: 26rem;
+}
+.staffContainerEven div h2, .staffContainerOdd div h2{
+    margin-top: -0.7rem;
+    margin-left: 0rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.staffContainerEven div img, .staffContainerOdd div img{
+    margin: 1rem;
+    align-items: center;
+    background: rgba(206, 206, 206, 0.5);
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+}
+.staffContainerEven div{
+    text-align: center;
+    float: left;
+    
+}
+.staffContainerOdd div h2{
+    margin-right: 1.6rem;
+}
+.staffContainerEven div h2{
+    
+    margin-right: 1.6rem;
+}
+#contactContainer button{
+    float: none;
+    
+}
+
+#faqContainer{
+    margin-top: 15vh;
+}
+#faqContainer h1 {
+    margin-left:29rem;
+}
+.question{
+    margin-left: 1.9rem;
+    background-color: rgb(228, 255, 253, 0.3 );
+    width: 90%;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    height: 5rem;
+}
+.question:hover,.question:focus{
+   
+    opacity: 1;
+    background: rgb(228, 255, 253, 0.7 )
+}
+
+#contactContainer{
+    margin-left: 1.9rem;
+    background-color: rgb(228, 255, 253, 0.3 );
+    width: 90%;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+#contactContainer input{
+    font-size: 1rem;
+    height: 3rem;
+    width: 80%;
+    padding-left: 2rem;
+    border-radius: 15px;
+    background-color:rgb(228, 255, 253, 0.5 ) ;
+    margin-top: 2rem;
+}
+#contactContainer input:focus{
+    background-color:rgb(228, 255, 253, 0.8) ;
+    box-shadow: white 0px 0px 1px 1px;
+}
+#contactContainer button{
+    font-size: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(228, 255, 253, 0.8 );
+}
+#contactContainer button:hover{
+    background-color: #333;
+}
+#profileContainer{
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-left: 4rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+}
+#profileInfo{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 0.9rem;
+background-color: rgb(228, 255, 253, 0.2 );
+border: 1px solid white;
+height: 60vh;
+padding: 1rem;
+border-radius: 3rem;
+width: 70%;
+
+}
+#profileInfo p{
+    border: 0.5px black solid;
+    width: 20%;
+    margin-bottom: 2.5rem;
+
+}
+#profileInfo button{
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(228, 255, 253, 0.8 );
+}
+#profileInfo button:hover{
+    background-color: #333;
+    color: white;
+}
+#profileInfo h3{
+    font-weight: lighter;
+}
+.appointmentdoctor{
+    float:left;
+    width: 92%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 10px;
+    height: 55px;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    padding-right: 10px;
+    background-color: rgb(228, 255, 253, 0.3 );
+    cursor: pointer;
+    margin-top: 12px;
+    opacity: 0.8;
+
+   
+    
+}
+.appointmentdoctor span{
+    float: left;
+    width: calc(100% / 6);
+    margin-top: 7px;
+    font-size: 11px;
+    
+    
+    
+}
+.appointmentdoctor span p{
+    margin-top: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+   font-style: oblique;
+   
+}
+#lijeviSpan{
+    float: left;
+    margin-left: -30px;
+    
+}
+.appointmentdoctor:hover{
+    box-shadow: rgb(226, 225, 225) 2px 2px 5px 2px ;
+    opacity: 1;
+    background: rgb(228, 255, 253, 0.7 );
+}
+.appointmentdoctor span button{
+    float: right;
+    border: none;
+    background: none;
+    margin-top: -0.5rem;
+    margin-right: -2.5rem;
+    font-size: 1rem;
+    height: 58px;
+    border-radius: 0px 15px 15px 0px;
+    
+    
+}
+.appointmentdoctor span button:hover{
+    background: white;
+
+}
+#appListdoctor {
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    text-align: left;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    
+}
+a:link{
+    color: black;
+}
+#requestNewFormCont input{
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    height: 2rem;
+    border-radius: 15px;
+    background-color:rgb(228, 255, 253, 0.5 ) ;
+    width: 120px;
+    
+}
+#requestNewFormCont button{
+    float: left;
+    margin-top: 1rem;
+}
+
+#requestNewFormCont{
+    margin-top: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    animation-name: fade ;
+    animation-duration: 1.5s;
+
+
+}
+@keyframes fade {
+    from {opacity: 0;  }
+    to {opacity: 1;}
+}

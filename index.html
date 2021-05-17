@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hms.css">
+       
+        <title>Hospital Management System</title>
+    </head>
+    <body>
+      <div id="naslov">
+        <div id="logo"><a href="homepage.html"><img src="hms.png"></a></div>
+         <div id="hmsNaslov"><a href="homepage.html"><h1>hms.</h1></a></div>
+         <a href="index.html" class="active" >Login/Register</a>
+
+     </div>
+
+        <div id="formegrid">
+            <div class="forma" id="patLoginForm">
+                <div class="avatarimage">
+                    <img src="patient.png" class="avatar">
+                  </div>
+                  <h2>Login as patient</h2>
+                
+            <form onsubmit="return login('patient')" method="post">
+                
+              
+                <div class="container" >
+                  <label for="email">E-mail</label>
+                  <input type="text" placeholder="Enter E-mail" name="Email" required>
+              
+                  <label for="psw">Password</label>
+                  <input type="password" placeholder="Enter Password" name="Password" required>
+                  <input type="hidden" name="isDoctor" value=false>
+
+                  <button type="submit">Login</button>
+                  <p id="errorMessage"></p>
+
+                </div>  
+              </form>  
+              <div class="register"><span>Don't have an account ?</span><button onclick="showPatient()">Register</button></div>
+            </div>
+            <div class="forma" id="doctorLoginform">
+                <div class="avatarimage">
+                    <img src="doctor.png" class="avatar" >
+                  </div>
+                <h2>Login as doctor</h2>
+                <form onsubmit="return login('doctor')" method="post">
+                    
+                    <div class="container">
+                        <label for="Email">E-mail</label>
+                        <input type="text" placeholder="Enter E-mail" name="Email" required>
+                      <input type="hidden" name="isDoctor" value=true>
+                      <label for="psw">Password</label>
+                      <input type="password" placeholder="Enter Password" name="Password" required>
+                      
+                      <button type="submit">Login</button>
+                      <p id="errorMessage"></p>
+                    </div>  
+                  </form> 
+                 <div class="register"><span>Don't have an account ?</span><button onclick="showDoctor()">Register</button></div>
+                </div>
+
+                <div class="registerforma" id="patientRegistration">
+                    <h2>Patient registration</h2>
+                    <form onsubmit="return register('patient')" method="post">
+                    
+                    <div class="registercontainer">
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Enter Name" name="FirstName" required>
+
+                      <label for="surname">Surname</label>
+                      <input type="text" placeholder="Enter Surname" name="LastName" required>
+                       
+                      <label for="jmbg">JMBG (unique ID)</label>
+                      <input type="text" placeholder="Enter JMBG" name="Jmbg" required>
+
+                      <label for="email">E-mail</label>
+                      <input type="text" placeholder="Enter E-mail" name="Email" required>
+
+                      <label for="phone">Phone number</label>
+                      <input type="text" placeholder="Enter Phone Number" name="Phone" required>
+
+                      <label for="psw">Password</label>
+                      <input type="password" placeholder="Enter Password" name="Password" required>
+
+                      <label for="psw2">Repeat password</label>
+                      <input type="password" placeholder="Repeat Password" name="Password2" required>
+                      <input type="hidden" name="isDoctor" value="false">
+                      <button type="submit">Register</button>
+                    </div>  
+                  </form>  
+                  
+                </div>
+                <div class="registerforma" id="doctorRegistration">
+                    <h2>Doctor registration</h2>
+                    <form onsubmit="return register('doctor')" method="post">
+                    
+                    <div class="registercontainer">
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Enter Name" name="FirstName" required>
+
+                      <label for="surname">Surname</label>
+                      <input type="text" placeholder="Enter Surname" name="LastName" required>
+                       
+                      <label for="jmbg">JMBG (unique ID)</label>
+                      <input type="text" placeholder="Enter JMBG" name="Jmbg" required>
+
+                      <label for="specialty">Specialty</label>
+                      <input type="text" placeholder="Enter Specialty" name="Speciality" required>
+
+                      <label for="email">E-mail</label>
+                      <input type="text" placeholder="Enter E-mail" name="Email" required>
+
+                      <label for="phone">Phone number</label>
+                      <input type="text" placeholder="Enter Phone Number" name="Phone" required>
+
+                      <label for="psw">Password</label>
+                      <input type="password" placeholder="Enter Password" name="Password" required>
+
+                      <label for="psw2">Repeat password</label>
+                      <input type="password" placeholder="Repeat Password" name="Password2" required>
+                      <input type="hidden" name="isDoctor" value="true">
+                      <button type="submit">Register</button>
+                    </div>  
+                  </form>  
+                  
+                </div>
+                
+
+        </div>
+    <script src="hms.js"></script>
+    </body>
+    
+</html>

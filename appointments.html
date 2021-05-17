@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hms.css">
+        <script src="hms.js"></script>
+        <script src="https://kit.fontawesome.com/c0741b93fc.js" crossorigin="anonymous"></script>
+        <title>Hospital Management System</title>
+    </head>
+    <body>
+        <div id="naslov">
+            <div id="logo"><a href="homepage.html"><img src="hms.png"></a></div>
+             <div id="hmsNaslov"><a href="homepage.html"><h1>hms.</h1></a></div>
+             <a href="homepage.html">Home</a>
+             <a href="aboutus.html">About Us</a>
+             <a href="ourstaff.html">Our Staff</a>
+             <a href="contact.html">FAQ</a>
+
+         </div>
+         <div id="naslov2">
+            <a href="appointments.html" class="active" >Appointments</a>
+            <a href="prescriptions.html">Prescriptions</a>
+            <a href="profile.html">Profile</a>
+         </div>
+         <div id="appList">
+             <div scroll="scroll">
+                 <div class="appDiv"><i class="fas fa-history" style="font-size: 2rem;"></i><h1>History</h1></div>
+                 <div id="appointmentsListScroll">
+                  <div class="appointment">
+                  <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                  <span>Status <p class="appStatus">Requested</p></span>
+                  <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                  <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                  <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                 </div>
+                 <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00002</p></span>
+                    <span>Status <p class="appStatus">Approved</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00003</p></span>
+                    <span>Status <p class="appStatus">Expired</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00004</p></span>
+                    <span>Status <p class="appStatus">Pending</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00005</p></span>
+                    <span>Status <p class="appStatus">Requested</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
+                    <span>Status <p class="appStatus">Approved</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                    <span>Status <p class="appStatus">Requested</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                    <span>Status <p class="appStatus">Requested</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                    <span>Status <p class="appStatus">Requested</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                   <div class="appointment">
+                    <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                    <span>Status <p class="appStatus">Requested</p></span>
+                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                    <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                   </div>
+                </div>
+            </div>
+            <div id="requestNew">
+                <button onclick="showRequestForm()"><img src="requestApp.png">Request New Appointment</button>
+                <div id="requestNewFormCont" >
+                <form action=".." method="post">
+                
+                    <label for="reason">Reason ?</label><br>
+                    <input name="reason" type="text" placeholder="Enter your reason..." required  maxlength="15"><br>
+                    <label for="date">Desired date ?</label><br>
+                    <input name="date" type="date" placeholder="Enter your desired date..." required >  <br>
+                    <label for="doctor">Doctor ?</label><br>
+                    <input name="doctor" type="text" placeholder="Enter the name of the doctor... " required> <br>
+                    <button type="submit">Request</button>
+                </form>
+                </div>
+               
+            </div>
+            </div>
+         </div>
+ 
+    </body>
+</html>

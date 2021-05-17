@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hms.css">
+        <script src="hms.js"></script>
+        <script src="https://kit.fontawesome.com/c0741b93fc.js" crossorigin="anonymous"></script>
+        <title>Hospital Management System</title>
+    </head>
+    <body onload="loadAppointments()">
+        <div id="naslov">
+            <div id="logo"><a href="homepagedoc.html"><img src="hms.png"></a></div>
+             <div id="hmsNaslov"><a href="homepagedoc.html"><h1>hms.</h1></a></div>
+             <a href="homepagedoc.html">Home</a>
+             <a href="aboutusdoc.html">About Us</a>
+             <a href="ourstaffdoc.html">Our Staff</a>
+             <a href="contactdoc.html">FAQ</a>
+
+         </div>
+         <div id="naslov2">
+            <a href="appointmentsdoc.html" class="active" >Appointments</a>
+            <a href="prescriptionsdoc.html">Prescriptions</a>
+            <a href="profiledoc.html">Profile</a>
+         </div>
+         <div id="appListdoctor">
+             <div scroll="scroll">
+                 <div class="appDiv"><i class="fas fa-history" style="font-size: 2rem;"></i><h1>History</h1></div>
+                 <div id="appointmentsListScroll">
+                  <div class="appointmentdoctor">
+                  <span id="lijeviSpan">ID <p class="appId">00001</p></span>
+                  <span>Status <p class="appStatus">Requested</p></span>
+                  <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
+                  <span>Date Issued<p class="appIssued">28.04.2021</p></span>
+                  <span>Details<p class="appDetails">Lorem ipsum</p></span>
+                  <span><button>Approve</button></span>
+                 </div>
+                 
+                   
+                </div>
+            </div>
+            
+         </div>
+ 
+    </body>
+</html>
