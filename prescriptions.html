@@ -6,7 +6,7 @@
         <script src="https://kit.fontawesome.com/c0741b93fc.js" crossorigin="anonymous"></script>
         <title>Hospital Management System</title>
     </head>
-    <body onload="loadPrescriptions()">
+    <body onload=" return loadPrescriptions()">
         <div id="naslov">
             <div id="logo"><a href="homepage.html"><img src="hms.png"></a></div>
              <div id="hmsNaslov"><a href="homepage.html"><h1>hms.</h1></a></div>
@@ -25,89 +25,21 @@
              <div class="scroll">
                 <div class="appDiv"><i class="fas fa-history" style="font-size: 2rem;"></i><h1>History</h1></div>
                 <div id="prescriptionsListScroll">
-                <div class="appointment">
-                  <span id="lijeviSpan">ID <p class="appId">00001</p></span>
-                  <span>Status <p class="appStatus">Requested</p></span>
-                  <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                  <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                  <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                 </div>
-                 <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00002</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00003</p></span>
-                    <span>Status <p class="appStatus">Expired</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00004</p></span>
-                    <span>Status <p class="appStatus">Pending</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00005</p></span>
-                    <span>Status <p class="appStatus">Requested</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
-                   <div class="appointment">
-                    <span id="lijeviSpan">ID <p class="appId">00006</p></span>
-                    <span>Status <p class="appStatus">Approved</p></span>
-                    <span>Date Requested<p class="appRequested">21.04.2021.</p></span>
-                    <span>Date Issued<p class="appIssued">28.04.2021</p></span>
-                    <span>Name<p class="appDetails">Lorem ipsum</p></span>
-                   </div>
+                
                 </div>
             </div>
             <div id="requestNew">
                 <button onclick="showRequestForm()"><img src="requestApp.png">Request New Prescription/<br>Renewal</button><br>
                <div id="requestNewFormContPres">
-                <form action=".." method="post">
+                <form onsubmit="requestPrescription()" method="post">
                     <div id="requestNewFormCont" >
                         <label for="name">Name ?</label><br>
-                        <input name="name" type="text" placeholder="Enter medicine ..." required  maxlength="15"><br>
+                        <input name="Description" type="text" placeholder="Enter medicine ..." required  maxlength="15"><br>
                         <label for="date">Desired date ?</label><br>
-                        <input name="date" type="date" placeholder="Enter your desired date..." required >  <br>
+                        <input name="Expires" type="date" placeholder="Enter your desired date..." required >  <br>
                         <label for="doctor">Doctor ?</label><br>
-                        <input name="doctor" type="text" placeholder="Enter full name ... " required> <br>
+                        <input name="DoctorId" type="text" placeholder="Enter full name ... " required> <br>
+                        <input type="hidden" name="Status" value="0">
                         <button type="submit">Request</button>
                     </div>
                     </form>
